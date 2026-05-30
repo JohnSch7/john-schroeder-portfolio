@@ -1,0 +1,111 @@
+.lightboxOverlay {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(4px) saturate(0.9) !important;
+  -webkit-backdrop-filter: blur(4px) saturate(0.9) !important;
+}
+
+.lightbox {
+  position: fixed !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 100% !important;
+  transform: translateY(-50%) !important;
+  padding: 0 !important;
+}
+
+.lb-outerContainer {
+  position: relative !important;
+  z-index: 1 !important;
+  background: #0d0d0f !important;
+  padding: 0 !important;
+  border-radius: 10px !important;
+}
+
+.lb-image {
+  display: block !important;
+  margin: 0 auto !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 88vw !important;
+  max-height: 82vh !important;
+  object-fit: contain !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+}
+
+.lb-dataContainer {
+  position: relative !important;
+  z-index: 3 !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  margin: 8px auto 0 auto !important;
+  padding-top: 4px !important;
+}
+
+.lb-data {
+  position: relative !important;
+  z-index: 3 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  padding-bottom: 2px !important;
+}
+
+.lb-data .lb-details {
+  float: none !important;
+  width: auto !important;
+  text-align: left !important;
+}
+
+.lb-data .lb-close {
+  position: relative !important;
+  z-index: 4 !important;
+  display: block !important;
+  float: none !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+.lb-data .lb-caption {
+  color: #e6e6e6 !important;
+}
+
+.lb-data .lb-number {
+  color: #a8a8a8 !important;
+}
+
+.lb-close {
+  opacity: 0.8 !important;
+  text-decoration: none !important;
+}
+
+.lb-close:hover {
+  opacity: 1 !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 900px) {
+  .lb-image {
+    max-width: 94vw !important;
+    max-height: 74vh !important;
+  }
+
+  .lb-dataContainer {
+    max-width: none !important;
+  }
+
+  .lb-nav a.lb-prev,
+  .lb-nav a.lb-next {
+    display: block !important;
+    opacity: 0.5 !important;
+  }
+
+  .lb-nav a.lb-prev:hover,
+  .lb-nav a.lb-next:hover,
+  .lb-nav a.lb-prev:focus,
+  .lb-nav a.lb-next:focus {
+    opacity: 0.7 !important;
+  }
+}

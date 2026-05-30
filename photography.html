@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography | John Schroeder</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="photography.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="lightbox-overrides.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="video_editing.html">Video Editing</a></li>
+        <li class="nav-sep">|</li>
+        <li><a href="other_work.html">Other Work</a></li>
+        <li class="nav-sep">|</li>
+        <li><a href="index.html">About</a></li>
+        <li class="nav-sep">|</li>
+        <li><a href="mailto:johnjschroeder.work@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project">
+      <h2>Portraits</h2>
+      <p class="description">Portraits captured on a Nikon D3.</p>
+      <div class="gallery-grid">
+        <a href="photography/portrait_josh.jpg" data-lightbox="photographs" data-title="Josh"><img
+            src="photography/portrait_josh.jpg" alt="Josh"></a>
+        <a href="photography/portrait_mary.jpg" data-lightbox="photographs" data-title="Mary"><img
+            src="photography/portrait_mary.jpg" alt="Mary"></a>
+        <a href="photography/rain.jpg" data-lightbox="photographs" data-title="Walking in the Rain"><img
+            src="photography/rain.jpg" alt="Walking in the Rain"></a>
+        <a href="photography/fishing_line.jpg" data-lightbox="photographs" data-title="Fishing Line"><img
+            src="photography/fishing_line.jpg" alt="Fishing Line"></a>
+        <a href="photography/portrait_james.jpg" data-lightbox="photographs" data-title="James"><img
+            src="photography/portrait_james.jpg" alt="James"></a>
+        <a href="photography/portrait_sedona.jpg" data-lightbox="photographs" data-title="Sedona"><img
+            src="photography/portrait_sedona.jpg" alt="Sedona"></a>
+        <a href="photography/motorcycle.jpg" data-lightbox="photographs" data-title="Harley Davidson"><img
+            src="photography/motorcycle.jpg" alt="Harley Davidson"></a>
+        <a href="photography/bike.jpg" data-lightbox="photographs" data-title="Bicycle"><img src="photography/bike.jpg"
+            alt="Bicycle"></a>
+        <a href="photography/car.jpg" data-lightbox="photographs" data-title="Car"><img src="photography/car.jpg"
+            alt="Car"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 John Schroeder |
+      <a href="mailto:johnjschroeder.work@gmail.com">
+        johnjschroeder.work@gmail.com
+      </a>
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script>
+    if (window.lightbox && typeof window.lightbox.option === 'function') {
+      window.lightbox.option({
+        resizeDuration: 0,
+        imageFadeDuration: 120,
+        fadeDuration: 120,
+        wrapAround: true
+      });
+    }
+  </script>
+</body>
+
+</html>
